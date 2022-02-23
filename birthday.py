@@ -1,13 +1,32 @@
 from __future__ import print_function
+from os import system
 import winsound
 import time
 import sys
+import datetime
 
-if sys.version_info.major == 2:
-	name = raw_input("What is your name? ")
-else:
-	print('Python2 is recomended')
-	name = input("What is your name? ")
+_ = system('cls')
+banner = """
+
+			
+			 ▄ .▄ ▄▄▄·  ▄▄▄· ▄▄▄· ▄· ▄▌    ▄▄▄▄· ▪  ▄▄▄  ▄▄▄▄▄ ▄ .▄·▄▄▄▄   ▄▄▄·  ▄· ▄▌
+			██▪▐█▐█ ▀█ ▐█ ▄█▐█ ▄█▐█▪██▌    ▐█ ▀█▪██ ▀▄ █·•██  ██▪▐███▪ ██ ▐█ ▀█ ▐█▪██▌
+			██▀▐█▄█▀▀█  ██▀· ██▀·▐█▌▐█▪    ▐█▀▀█▄▐█·▐▀▀▄  ▐█.▪██▀▐█▐█· ▐█▌▄█▀▀█ ▐█▌▐█▪
+			██▌▐▀▐█ ▪▐▌▐█▪·•▐█▪·• ▐█▀·.    ██▄▪▐█▐█▌▐█•█▌ ▐█▌·██▌▐▀██. ██ ▐█ ▪▐▌ ▐█▀·.
+			▀▀▀ · ▀  ▀ .▀   .▀     ▀ •     ·▀▀▀▀ ▀▀▀.▀  ▀ ▀▀▀ ▀▀▀ ·▀▀▀▀▀•  ▀  ▀   ▀ •
+
+			
+
+			    			JANICE "NENENG" P. LAZARTE
+
+        """
+print(banner)
+
+
+present = datetime.datetime.now()
+future = datetime.datetime(2022, 2, 24, 0, 0, 0)
+difference = future - present
+print(str(difference) + " hours left!")
 
 print('Ha', end='')
 winsound.Beep(264, 250)
@@ -24,7 +43,7 @@ time.sleep(250/2000.0)
 print('to ', end='')
 winsound.Beep(352, 1000)
 time.sleep(250/2000.0)
-print('you')
+print('you!')
 winsound.Beep(330, 2000)
 time.sleep(500/2000.0)
 
@@ -43,7 +62,7 @@ time.sleep(250/2000.0)
 print('to ', end='')
 winsound.Beep(396, 1000)
 time.sleep(250/2000.0)
-print('you')
+print('you!')
 winsound.Beep(352, 2000)
 time.sleep(500/2000.0)
 
@@ -59,9 +78,9 @@ time.sleep(250/2000.0)
 print('day ', end='')
 winsound.Beep(352, 1000)
 time.sleep(250/2000.0)
-print('dear ', end='')
+print('Dear ', end='')
 winsound.Beep(330, 1000)
-print(name)
+print("NENENG!")
 time.sleep(250/2000.0)
 winsound.Beep(297, 1000)
 
@@ -84,9 +103,9 @@ time.sleep(250/2000.0)
 print('to ', end='')
 winsound.Beep(396, 1000)
 time.sleep(250/2000.0)
-print('you')
+print('you!')
 winsound.Beep(352, 2000)
 time.sleep(250/2000.0)
 
-print('HAPPY BIRTHDAY ' + name + ' <3')
+print('HAPPY BIRTHDAY NENENG!!  I LOVE YOU SO MUCH!! <3')
 
